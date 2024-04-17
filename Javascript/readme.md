@@ -39,3 +39,24 @@ To view this webpage:
 - Enter text into the input field and click the "alert" button to display the text in an alert box.
 - Hover over the word "this" to change the background color of the entire page to a soft red.
 - Type a color into the input next to the last paragraph and click the paragraph to change its background color.
+
+## Virtual Garden Game
+
+### Overview
+The Virtual Garden Game is a simulation project where players can manage a garden, planting various types of plants, watering them, and watching them grow. It demonstrates object-oriented programming concepts such as classes, methods, attributes, and instance management.
+
+### Features
+- **Plant Various Types**: Players can add different types of plants to their garden.
+- **Water Plants**: A method to water the plants, which is crucial for their growth.
+- **Monitor Growth**: Players can watch as their plants grow over time and react to the care they receive.
+- **Dynamic Interactions**: The health and growth stages of plants change based on interactions.
+
+### Setup
+This script is intended to be run in an environment that supports JavaScript execution, such as a modern web browser with developer tools or a JavaScript runtime like Node.js.
+
+### Usage
+- Create instances of various plants and add them to your garden.
+- Use the `waterGarden()` method to care for all plants simultaneously.
+- Regularly check the status of your plants with the `checkGarden()` method to monitor their health and growth.
+
+This project provides an engaging way to learn and understand the application of object-oriented programming principles in a JavaScript context.
