@@ -1,0 +1,54 @@
+// JavaScript Destructuring Practice with Answers
+
+// Problem 1: Basic Array Destructuring
+// This demonstrates how array destructuring works by extracting elements based on their positions.
+const cars = ['Tesla', 'Mercedes', 'Honda'];
+const [randomCar] = cars; // Destructuring the first element
+const [, otherRandomCar] = cars; // Skipping the first element and destructuring the second
+console.log(randomCar);  // Outputs: 'Tesla', as it's the first element.
+console.log(otherRandomCar); // Outputs: 'Mercedes', as it's the second element.
+
+// Problem 2: Object Destructuring and Renaming
+// Here, we rename the destructured property to a new variable name.
+const employee = {
+    name: 'Elon',
+    age: 47,
+    company: 'Tesla'
+};
+const { name: otherName } = employee; // Renaming 'name' to 'otherName'
+console.log(otherName); // Outputs: 'Elon' because we've renamed 'name' to 'otherName'
+
+// Problem 3: Destructuring with Non-existent Properties
+// Shows what happens when you try to destructure a property that doesn't exist in the object.
+const person = {
+    name: 'Phil Smith',
+    age: 47,
+    height: '6 feet'
+};
+const password = '12345';
+const { password: hashedPassword } = person; // Attempting to destructure a non-existent 'password' property
+console.log(password); // Outputs: '12345', this is the password we defined above, not destructured from 'person'
+console.log(hashedPassword); // Outputs: 'undefined' because there's no 'password' in 'person'
+
+// Problem 4: Skipping in Array Destructuring
+// Demonstrates skipping elements in array destructuring.
+const numbers = [8, 2, 3, 5, 6, 1, 67, 12, 2];
+const [, first] = numbers; // Skips the first element and destructures the second
+const [,,, second] = numbers; // Skips the first three elements and destructures the fourth
+const [,,,,,,,, third] = numbers; // Skips the first eight elements and destructures the ninth
+console.log(first == second); // Outputs: false
+console.log(first == third); // Outputs: true
+
+// Problem 5: Nested Object Destructuring
+// Extracting properties from nested objects.
+const lastTest = {
+    key: 'value',
+    secondKey: [1, 5, 1, 8, 3, 3]
+};
+const { key } = lastTest;
+const { secondKey } = lastTest;
+const [, willThisWork] = secondKey;
+console.log(key); // Outputs: 'value'
+console.log(secondKey); // Outputs the array [1, 5, 1, 8, 3, 3]
+console.log(secondKey[0]); // Outputs: 1, accessing the first element of the array
+console.log(willThisWork); // Outputs: 5, skipping the first element and accessing the second
