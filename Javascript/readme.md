@@ -60,3 +60,18 @@ This script is intended to be run in an environment that supports JavaScript exe
 - Regularly check the status of your plants with the `checkGarden()` method to monitor their health and growth.
 
 This project provides an engaging way to learn and understand the application of object-oriented programming principles in a JavaScript context.
+
+## JavaScript Resources
+
+For further reading and additional resources, the following links may be helpful:
+
+- [MDN Web JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [JavaScript Info](https://javascript.info/)
+- [W3Schools JavaScript Tutorial](https://www.w3schools.com/js/)
+- [ECMAScript 6 Features Overview](http://es6-features.org/)
+- [Node.js Documentation](https://nodejs.org/en/docs/)
+- [Express Official Documentation](http://expressjs.com/)
+- [Read Eloquent JavaScript Online](https://eloquentjavascript.net/)
+- [Frontend Masters - JavaScript Courses](https://frontendmasters.com/)
+- [Codecademy JavaScript Course](https://www.codecademy.com/learn/introduction-to-javascript)
+- [FreeCodeCamp JavaScript Curriculum](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
