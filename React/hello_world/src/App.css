@@ -1,0 +1,47 @@
+
+/* App.css file content */
+.App {
+  text-align: center;
+}
+
+.App {
+  /* ... other styles ... */
+  padding-left: 50px; /* Or however much padding you want */
+}
+
+.App-header h1 {
+  font-size: 48px; /* Increase font size for the "Hello Dojo!" text */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.App-header h2 {
+  font-size: 24px; /* Increase font size for the subheading */
+  margin-bottom: 10px; /* Add some space below the subheading */
+}
+
+.App-header ul {
+  padding-left: 20px; /* Add some padding to the list */
+  text-align: left; /* Align text to the left */
+}
+
+.App-header li {
+  font-size: 20px; /* Increase font size for list items */
+}
+
+
+.App {
+  text-align: left; /* Change text alignment to left */
+  background-color: white; /* Set background color to white */
+  color: black; /* Set font color to black */
+  min-height: 100vh; /* Ensures the div takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of the flex container */
+  justify-content: center; /* Center items vertically */
+  font-family: Arial, sans-serif; /* Use a standard font */
+}
+
+/* You might want to add or adjust other styles such as padding, margins, etc. */
+
+
+/* Additional styling could be added here as needed */
