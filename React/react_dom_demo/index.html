@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello React</title>
+    <!-- Meta tags are essential for HTML documents to set character encoding and other HTML settings -->
+</head>
+<body>
+    <div id="root">
+        <!-- This div is the mounting point for the React application. Initially, it contains a placeholder message. -->
+        <h1>First React page rendering...</h1>
+    </div>
+    
+    <!-- Including React library from a CDN (Content Delivery Network) -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <!-- Including ReactDOM library which provides DOM-specific methods that can be used at the top level of a web app -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script>
+        // Selecting the DOM element where React will manage content
+        const domContainer = document.querySelector('#root');
+        // Creating a root where React will manage and render its components. This uses the new 'createRoot' API introduced in React 18, 
+        //designed for improved performance and better handling of concurrent features in React applications.
+        const root = ReactDOM.createRoot(domContainer);
+        // Using React.createElement to create a new 'h1' element and rendering it into the root
+        // This replaces the content inside the 'root' div
+        root.render(React.createElement("h1", {}, "Our First React page has rendered"));
+    </script>
+</body>
+</html>
