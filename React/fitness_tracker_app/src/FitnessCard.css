@@ -1,0 +1,57 @@
+
+.card {
+    background: #fff; /* White background for each card */
+    border-radius: 8px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 1rem; /* Margin around each card */
+    padding: 2rem; /* Padding inside the card */
+    text-align: center; /* Center text within the card */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack card content vertically */
+    justify-content: space-around; /* Space out content evenly */
+    height: 200px; /* Fixed height for uniformity */
+}
+
+.fitness-card {
+    display: inline-block; /* Inline-block for side-by-side card layout */
+    width: calc(33.333% - 20px); /* Calculate width for three cards per row */
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+    margin-right: 10px; /* Space between cards */
+}
+
+.fitness-card button {
+    margin-right: 10px; /* Space between buttons */
+}
+
+/* Style for the progress bar within each fitness card */
+.progress-bar {
+    background: #e0e0e0; /* Light grey background for progress bar */
+    border-radius: 8px; /* Rounded corners for progress bar */
+    overflow: hidden; /* Hide overflow content for a clean cut off */
+    position: relative; /* Relative position for internal positioning */
+    height: 20px; /* Fixed height for progress bar */
+}
+
+/* Filling effect for the progress bar */
+.progress-bar-fill {
+    background: #4caf50; /* Green background for filled portion */
+    height: 100%; /* Full height to match progress bar */
+    transition: width 0.25s ease-in-out; /* Smooth transition for width changes */
+}
+
+/* Style for buttons in the fitness card */
+button {
+    background: #4caf50; /* Green background for buttons */
+    border: none; /* No border to keep it clean */
+    border-radius: 5px; /* Slightly rounded corners for the button */
+    color: white; /* White text color for contrast */
+    padding: 10px 20px; /* Padding for button size and comfort */
+    margin-top: 10px; /* Space above button */
+    cursor: pointer; /* Pointer cursor on hover for interactivity */
+    transition: background-color 0.25s ease-in-out; /* Smooth background color transition on hover */
+}
+
+/* Hover effect for buttons to provide visual feedback */
+button:hover {
+    background: #43a047; /* Darker green on hover for button */
+}

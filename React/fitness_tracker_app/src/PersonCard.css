@@ -1,0 +1,6 @@
+.person-name {
+  text-align: left; /* Align the person's name to the left */
+  font-size: 1.5rem; /* Set font size for the name */
+  margin-left: 20px; /* Add some margin to the left of the name for spacing */
+  margin-bottom: 10px; /* Add some space below the name before the cards start */
+}

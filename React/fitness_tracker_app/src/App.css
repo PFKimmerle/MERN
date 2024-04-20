@@ -1,0 +1,44 @@
+
+.App {
+  text-align: center; /* Center text alignment for all content within App */
+  font-family: 'Roboto', sans-serif; /* Use Roboto font for cleaner appearance */
+}
+
+.App-header {
+  background-color: #282c34; /* Dark background for the header for contrast */
+  min-height: 10vh; /* Minimum height for the header */
+  display: flex; /* Flexbox layout for centering content */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items horizontally */
+  justify-content: center; /* Center align items vertically */
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white; /* White text color for readability on dark background */
+}
+
+main {
+  display: grid; /* Grid layout for main content area */
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns for fitness cards */
+  gap: 1rem; /* Gap between grid items */
+  padding: 1rem; /* Padding around the grid */
+}
+
+.profile-row {
+  display: flex; /* Flexbox layout for profile rows */
+  justify-content: center; /* Center profile cards horizontally */
+  margin-bottom: 20px; /* Space below each profile row */
+}
+
+.profile-divider {
+  grid-column: 1 / -1; /* Stretch divider across all grid columns */
+  border: none; /* No border for the divider line */
+  height: 1px; /* One-pixel high line for the divider */
+  background-color: #ccc; /* Grey color for the divider line */
+  margin: 20px auto; /* Margin to center the divider line vertically */
+  width: 100%; /* Full width for the divider line */
+}
+
+.profile-name {
+  font-size: 2rem; /* Larger font size for profile names */
+  margin: 20px 0; /* Space above and below profile names */
+  text-align: center; /* Center alignment for profile names */
+}
