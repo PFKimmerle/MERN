@@ -1,0 +1,74 @@
+
+/* App component styles */
+.app {
+    display: flex; /* Enables flexible box layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    min-height: 100vh; /* Ensures app fills at least the full height of the viewport */
+    background-color: #dddddd; /* Sets the background color of the entire app */
+}
+
+/* Header component styles */
+.header {
+    margin-top: 10px; /* Adds space above the header */
+    margin-left: 10px; /* Adds space on the left side of the header */
+    margin-right: 10px; /* Adds space on the right side of the header */
+    background-color: #60a84f; /* Sets the background color of the header */
+    padding: 20px; /* Adds padding inside the header for content */
+    text-align: center; /* Centers the header text */
+    color: white; /* Sets the text color */
+    width: 96.5%; /* Sets the width, accounting for margin */
+    position: fixed; /* Keeps the header at the top of the viewport */
+    top: 0; /* Aligns the header to the top edge of the viewport */
+    z-index: 10; /* Ensures header stays above other content */
+}
+
+/* Navigation component styles */
+.navigation {
+    margin-left: 10px; /* Adds space on the left side of the navigation */
+    background-color: #0c6a8f; /* Sets the background color of the navigation */
+    color: white; /* Sets the text color for the navigation */
+    width: 200px; /* Explicitly sets the width of the navigation */
+    height: calc(70vh - 40px); /* Calculates height based on viewport height and header */
+    padding: 20px; /* Adds padding inside the navigation for content */
+    position: fixed; /* Keeps the navigation fixed on the side */
+    margin-top: 40px; /* Adds space below the fixed header */
+    top: 40px; /* Positions the navigation below the header */
+    left: 0; /* Aligns the navigation to the left edge of the viewport */
+    z-index: 5; /* Ensures navigation stays above the main content but below the header */
+}
+
+
+/* Main component styles */
+.main {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    margin-top: 80px; /* Below the header */
+    margin-left: 260px; /* Width of the navigation plus its margin */
+    padding: 10px;
+    background-color: #e06666;
+    width: calc(99% - 260px - 20px); /* Subtract the width of the navigation and padding */
+    min-height: calc(90vh - 40px);
+}
+
+.subcontent {
+    flex-grow: 1;
+    background-color: #ffd966; /* Yellow background */
+    margin: 15px;
+    padding: 20px;
+    min-height: calc(65vh - 40px); /* Full height minus header */
+}
+
+.subcontent-container {
+    display: flex;
+    padding: 10px 0; /* Vertical padding only */
+}
+
+
+/* Advertisement component styles */
+.advertisement {
+    background-color: #b4a7d6;
+    margin-top: auto; /* Pushes it to the bottom */
+    margin: 10px 15px 10px 15px;
+    padding: 10px;
+    height: 100px; /* Fixed height */
+}
