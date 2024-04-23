@@ -1,0 +1,113 @@
+/* General styling for the application container. */
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Use the full height of the viewport. */
+    padding: 20px; /* Add space around the application content. */
+    box-sizing: border-box; /* Padding is included in an element's total width and height. */
+}
+
+/* Styling for the container of the form elements. */
+.form-container {
+    width: 100%; /* Use the full width of the parent element. */
+    max-width: 600px; /* Maximum width of the form. */
+    margin: 0 auto; /* Center the form horizontally within its parent. */
+    padding: 10px; /* Space inside the form container. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow for a 3D effect. */
+    border-radius: 4px; /* Rounded corners for the form container. */
+    background: #fff; /* White background for the form. */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form contents. */
+    overflow: auto; /* Enable scrolling if the content overflows. */
+    max-height: calc(100vh - 50px); /* Adjust the height based on the viewport. */
+}
+
+/* Styling for each group of form elements, containing a label and an input/textarea. */
+.form-group {
+    width: 100%; /* Form group takes the full width of its parent. */
+    max-width: 550px; /* Maximum width allowed for form groups. */
+    margin: 0 auto; /* Center the form group within the form. */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Space after each form group. */
+}
+
+/* Styling for labels in form groups. */
+.form-group label {
+    display: block; /* Ensure the label takes up its own line. */
+    margin-bottom: 5px; /* Space between the label and the input/textarea that follows. */
+}
+
+/* Make sure labels and buttons take the full width of their form group for consistency. */
+.form-group label,
+.form-group button {
+    width: 100%;
+}
+
+/* Input and Textarea Styling */
+.form-group input,
+.form-group textarea {
+    width: 500px; /* Set fixed width for input and textarea elements */
+    padding: 10px; /* Add padding inside the input and textarea for better readability */
+    border: 1px solid #ccc; /* Apply a light grey border to the input and textarea elements */
+    border-radius: 4px; /* Round the corners of the input and textarea elements */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+/* Style for displaying form data with left text alignment */
+.form-data {
+    text-align: left;
+    box-sizing: border-box; /* Make sure padding is included in width calculation */
+}
+
+/* Horizontal Rule Styling */
+hr {
+    margin-top: 20px; /* Add space above the horizontal rule */
+    border: 0; /* Remove default border */
+    height: 1px; /* Set height for the horizontal rule */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); /* Gradient effect for the horizontal rule */
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out progress steps evenly */
+    padding: 0; /* Remove padding */
+    margin-bottom: 20px; /* Add space below the progress bar */
+}
+
+/* Individual Progress Step Styling */
+.progress-step {
+    flex-basis: 20%; /* Each step takes up 20% of the flex container */
+    border-bottom: 2px solid grey; /* Add a grey bottom border to indicate progress step */
+    text-align: center; /* Center the step text */
+    padding-right: 50px; /* Add right padding for spacing */
+    padding-left: 50px; /* Add left padding for spacing */
+}
+
+/* Completed Progress Step Styling */
+.progress-step.completed {
+    border-bottom: 2px solid #00f; /* Change bottom border color to blue for completed steps */
+    color: #00f; /* Change text color to blue for completed steps */
+}
+
+/* Continue Button Styling */
+.continue-button {
+    padding: 10px 20px; /* Add padding inside the button for a larger click area */
+    background-color: #007bff; /* Set background color to blue */
+    color: white; /* Set text color to white for contrast */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Round the corners of the button */
+    cursor: pointer; /* Change cursor to pointer to indicate a clickable button */
+    display: block; /* Display block to take up full width of parent */
+    margin: 10px auto 10px; /* Center button horizontally with equal top and bottom margins */
+}
+
+/* Continue Button Hover Effect */
+.continue-button:hover {
+    background-color: #0056b3; /* Darken button color on hover for visual feedback */
+}
