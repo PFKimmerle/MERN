@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coin Flip Simulation</title>
+</head>
+<body>
+    <h1>Coin Flip Simulation</h1>
+    <p>Check the console for results.</p>
+    <script>
+        function tossCoin() {
+            return Math.random() > 0.5 ? "heads" : "tails";
+        }
+
+        function fiveHeads() {
+            return new Promise((resolve, reject) => {
+                let headsCount = 0;
+                let attempts = 0;
+                const maxAttempts = 100;
+
+                const flipCoin = () => {
+                    if (attempts >= maxAttempts) {
+                        reject(`Flipped more than ${maxAttempts} times without getting five "heads" in a row.`);
+                        return;
+                    }
+
+                    let result = tossCoin();
+                    console.log(`${result} was flipped`);
+                    attempts++;
+
+                    if (result === "heads") {
+                        headsCount++;
+                        if (headsCount === 5) {
+                            resolve(`It took ${attempts} tries to flip five "heads"`);
+                        } else {
+                            setTimeout(flipCoin, 0); // Use setTimeout to prevent stack overflow and simulate the asynchronous nature
+                        }
+                    } else {
+                        headsCount = 0;
+                        setTimeout(flipCoin, 0);
+                    }
+                };
+
+                flipCoin(); // Initial call to start flipping
+            });
+        }
+
+        fiveHeads()
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
+
+        console.log("When does this run now?");
+    </script>
+</body>
+</html>
