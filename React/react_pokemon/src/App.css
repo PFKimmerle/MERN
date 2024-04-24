@@ -1,0 +1,18 @@
+/* Style for the fetch button */
+.button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the list that will display the Pokemon names */
+.pokemon-list {
+    margin-top: 20px;
+}
+
+/* Style for each item in the Pokemon list */
+.pokemon-item {
+    list-style: none;
+}
