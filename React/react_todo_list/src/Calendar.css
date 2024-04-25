@@ -1,0 +1,50 @@
+/* Main container for the calendar with basic styling for layout and appearance. */
+.calendar {
+    display: flex; /* Enables the use of Flexbox for inner items. */
+    flex-direction: column; /* Stacks child elements vertically. */
+    align-items: center; /* Centers child elements horizontally. */
+    padding: 20px; /* Padding around the content for spacing. */
+    background-color: #e2e2e2; /* Light grey background for contrast. */
+    border-radius: 8px; /* Rounded corners for a softer look. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth. */
+    color: #333; /* Dark grey text color for readability. */
+}
+
+/* Styling for the calendar's header, which displays the current month and year. */
+.calendar-header {
+    font-size: 1.5em; /* Larger text for emphasis. */
+    color: #000000; /* Black color for header text. */
+    margin-bottom: 10px; /* Space below the header for separation. */
+}
+
+/* Grid container for weekday names, ensuring even spacing and alignment. */
+.calendar-day-names {
+    display: grid; /* Grid display for structured layout. */
+    grid-template-columns: repeat(7, 1fr); /* Seven equal columns for days of the week. */
+    font-weight: bold; /* Bold text for clarity. */
+}
+
+/* Grid container for the calendar dates, configured similarly to day names for consistency. */
+.calendar-grid {
+    display: grid; /* Grid layout for date cells. */
+    grid-template-columns: repeat(7, 1fr); /* Seven columns for weekly layout. */
+    gap: 5px; /* Space between cells for clear separation. */
+}
+
+/* Individual day cell styling within the calendar. */
+.calendar-day {
+    display: flex; /* Flexbox for centering content. */
+    align-items: center; /* Vertically center content within the cell. */
+    justify-content: center; /* Horizontally center content. */
+    min-width: 30px; /* Minimum width for uniformity. */
+    min-height: 30px; /* Minimum height to maintain aspect ratio. */
+    background-color: #fff; /* White background for the days. */
+    border-radius: 50%; /* Circular cells for a modern look. */
+    font-size: 0.85em; /* Slightly smaller text for fitting numbers. */
+}
+
+/* Special styling for the current day to highlight it. */
+.calendar-day.current-day {
+    background-color: #03a9f4; /* Bright blue background for visibility. */
+    color: #fff; /* White text for contrast against the blue. */
+}

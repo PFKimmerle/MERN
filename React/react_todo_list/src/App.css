@@ -1,0 +1,46 @@
+/* Root container styling */
+.app {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+    min-height: 100vh; /* Full viewport height */
+    padding-top: 20px; /* Top padding for breathing space */
+}
+
+/* Header styling for consistent positioning */
+.todo-list-header {
+    width: 100%; /* Full width to align with the container */
+    text-align: center; /* Center the header text */
+}
+
+/* Container for the todo list, positioned relative to other elements */
+.todo-list-container {
+    width: 100%; /* Full container width */
+    max-width: 600px; /* Maximum width for readability */
+    margin-top: 20px; /* Space below header */
+}
+
+/* Styling for completed todo items, indicating their status visually */
+.todo-item.completed {
+    text-decoration: line-through; /* Strike-through style */
+}
+
+/* Styling for the calendar component, ensuring it doesn't flex */
+.calendar-container {
+    position: absolute; /* Position relative to nearest positioned ancestor */
+    top: 20px; /* Top margin from the viewport */
+    right: 20px; /* Right margin from the viewport */
+    width: auto; /* Width auto-adjusts to content */
+    flex-shrink: 0; /* Prevent shrinking in flex layout */
+}
+
+/* Grid styling adjustments for the calendar to fit content */
+.calendar-grid {
+    grid-template-rows: auto; /* Grid rows adjust to content size */
+}
+
+/* Adjust root container styles to prevent unnecessary scrolling */
+.app {
+    min-height: initial; /* Height adjusts to content */
+    padding-bottom: 0; /* Remove bottom padding */
+}

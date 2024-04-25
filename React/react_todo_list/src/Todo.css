@@ -1,0 +1,17 @@
+/* Style rules for the todo item container */
+.todo-item {
+    display: flex; /* Uses flexbox to align children horizontally */
+    align-items: center; /* Vertically align children in the middle */
+    margin-bottom: 5px; /* Space between todo items */
+}
+
+/* Style for the text part of a todo item */
+.todo-text {
+    flex-grow: 1; /* Takes up remaining space to push checkbox and delete button to opposite ends */
+    margin-left: 10px; /* Spacing from the checkbox to the text */
+}
+
+/* Style for the delete button */
+.delete-button {
+    margin-left: 10px; /* Spacing from the text to the delete button */
+}
