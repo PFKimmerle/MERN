@@ -1,0 +1,22 @@
+.app {
+    font-family: 'Arial', sans-serif; /* Sets the default font for the app */
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* At least full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    margin: 0; /* Remove default margins to align the body's edge to the viewport */
+    padding: 0; /* Remove default padding to ensure content uses the full available space */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* Sets a system-based font stack for optimal text rendering across different platforms */
+    -webkit-font-smoothing: antialiased; /* Enhances text rendering on WebKit browsers by smoothing fonts */
+    -moz-osx-font-smoothing: grayscale; /* Improves font rendering on Firefox for macOS by applying grayscale antialiasing */
+}
+
+div {
+    text-align: center; /* Ensures text within the div is centered */
+}
