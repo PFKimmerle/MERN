@@ -10,16 +10,11 @@ The MERN stack is an end-to-end JavaScript stack used for building dynamic and i
 
 - **JavaScript**: Fundamental JavaScript concepts and snippets.
 - **React**: Projects and components built using React.
+- **Express/Faker API**: An Express.js application to generate fake data for users and companies, useful for mock data in development.
 
 ## Getting Started
 
 To run any of the projects in this repository, ensure you have Node.js installed, and follow the README in each project's subfolder for specific setup instructions.
-
-
-## Future Plans
-
-As I progress through my self-learning journey, I plan to expand this repository with additional projects covering more advanced topics and possibly integrating additional technologies into the MERN stack.
-
 
 ## Resources
 
@@ -32,7 +27,8 @@ For further reading and additional resources, the following links may be helpful
 - [npm Official Site](https://www.npmjs.com/)
 - [MongoDB Official Site](https://www.mongodb.com/)
 - [Express Framework](http://expressjs.com/)
-
+- [Faker.js on GitHub](https://github.com/faker-js/faker)
+- [Postman API Testing](https://www.postman.com/)
 
 ## License
 
