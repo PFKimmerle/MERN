@@ -53,7 +53,7 @@ Follow these steps to set up and use the Faker API:
 
 ## Resources
 - [Express.js Documentation](https://expressjs.com/)
-- [Faker.js on GitHub](https://github.com/marak/Faker.js/)
+- [Faker.js on GitHub](https://github.com/faker-js/faker)
 - [Postman API Testing](https://www.postman.com/)
 
 ## License Information
