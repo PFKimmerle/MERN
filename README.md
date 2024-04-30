@@ -11,6 +11,7 @@ The MERN stack is an end-to-end JavaScript stack used for building dynamic and i
 - **JavaScript**: Fundamental JavaScript concepts and snippets.
 - **React**: Projects and components built using React.
 - **Express/Faker API**: An Express.js application to generate fake data for users and companies, useful for mock data in development.
+- **MongoDB/Jokes API**: A web service that delivers a variety of jokes from a MongoDB database, showcasing how to use Node.js and Express for creating RESTful APIs.
 
 ## Getting Started
 
