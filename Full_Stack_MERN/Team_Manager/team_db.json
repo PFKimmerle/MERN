@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Lionel Messi",
+        "preferredPosition": "Forward",
+        "status": {
+            "game1": "Undecided",
+            "game2": "Undecided",
+            "game3": "Undecided"
+        }
+    },
+    {
+        "name": "Cristiano Ronaldo",
+        "preferredPosition": "Forward",
+        "status": {
+            "game1": "Undecided",
+            "game2": "Undecided",
+            "game3": "Undecided"
+        }
+    },
+    {
+        "name": "Neymar",
+        "preferredPosition": "Forward",
+        "status": {
+            "game1": "Undecided",
+            "game2": "Undecided",
+            "game3": "Undecided"
+        }
+    },
+    {
+        "name": "Zlatan Ibrahimovic",
+        "preferredPosition": "Forward",
+        "status": {
+            "game1": "Undecided",
+            "game2": "Undecided",
+            "game3": "Undecided"
+        }
+    },
+    {
+        "name": "Alex Morgan",
+        "preferredPosition": "Forward",
+        "status": {
+            "game1": "Undecided",
+            "game2": "Undecided",
+            "game3": "Undecided"
+        }
+    },
+    {
+        "name": "Hope Solo",
+        "preferredPosition": "Goalkeeper",
+        "status": {
+            "game1": "Undecided",
+            "game2": "Undecided",
+            "game3": "Undecided"
+        }
+    }
+]

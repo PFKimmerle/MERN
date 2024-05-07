@@ -1,0 +1,72 @@
+.App {
+    font-family: 'Lato', sans-serif;
+    margin: 20px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #555;
+    color: white;
+}
+
+button {
+    width: auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    max-width: 200px;
+}
+
+.button-add {
+    margin-top: 20px;
+}
+
+button.delete {
+    background-color: #EC492C;
+}
+
+button.playing {
+    background-color: #38BA7D;
+}
+
+button.not-playing {
+    background-color: #EC492C;
+}
+
+button.undecided {
+    background-color: #FFDE66;
+    color: black;
+}
